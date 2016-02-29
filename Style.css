@@ -11,7 +11,7 @@ body { background: black; }
 .red {background: red;}
 
 
-iframe { background: "logo.png"; }
+iframe { background: "http://i.imgur.com/esdRFQz.jpg"; }
 
 #homelink {
 	padding: 50px 0px 0px 20%; 
@@ -68,7 +68,7 @@ iframe { background: "logo.png"; }
 
 
 #repeatCosmos12 {
-			background: url("logo.png") repeat; 
+			background: url("http://i.imgur.com/esdRFQz.jpg") repeat; 
 		}
 		
 #postsNav {
