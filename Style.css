@@ -11,7 +11,7 @@ body { background: black; }
 .red {background: red;}
 
 
-iframe { background: "cosmos.png"; }
+iframe { background: "logo.png"; }
 
 #homelink {
 	padding: 50px 0px 0px 20%; 
@@ -68,7 +68,7 @@ iframe { background: "cosmos.png"; }
 
 
 #repeatCosmos12 {
-			background: url("cosmos12.png") repeat; 
+			background: url("logo.png") repeat; 
 		}
 		
 #postsNav {
