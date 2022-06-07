@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+
+<html> <!-- this is a comment-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset-ISO-8859-1" />
+		<meta name="description" content="Path to Mastery!" /><!-- these meta tags provide information to the browser, but they don't effect what you see... at least i'm sure this one doesn't.-->
+		<link rel="icon" href="icon.ico"/>
+		<title>The Path to Mastery</title>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<style>
+			h1 {color:red; }
+			h2 {color:black;}
+			h3 {color:black;}
+			h4 {color:white; font-family: segoe print;}
+			h5 {color:white;}
+			h6 {color:white;}
+			p {color:white;}
+			a {color:white;}
+			a:visited { color: white; }
+			body { background: black; }
+			.red {background: red;}
+			#homelink {
+				padding: 50px 0px 0px 20%; 
+			}
+			#messagelink {
+				padding: 0px 0px 0px 40%; 	
+			}
+			#portrait {
+				float: left;
+				padding: 0px 25px 0px 10px; 
+			}
+			#topNav {
+				padding: 10px 10px 10px 10px; 
+				background: black;
+			}	
+			#background{
+				float:center;
+			}
+			#postBody{
+				float: center;
+				padding: 0px 10px 0px 10px; 
+			}
+			#containsEntirePostSectionWithBackground {
+				float: center;
+				padding: 0px 24px 0px 24px; 
+				/*top right bottom left*/	
+			}
+			#leftNav {
+				float: left;
+				padding: 0px 25px 0px 25px; 
+				/*top right bottom left*/
+				background: #232220/*#2f4f4f *//*#696969*/;
+				height "100%";
+			}
+			#rightNav {
+				float: right;
+				padding: 0px 25px 0px 25px; 
+				/*top right bottom left*/
+				background: #232220/*#2f4f4f*/ /*#696969*/;
+			}				
+			#cosmicFrame {
+				opacity: 0.4; filter: alpha(opacity=40);
+			}
+			#transclucentBox {
+				opacity: 0.4; filter: alpha(opacity=40);
+			}
+			div.containsNavs {
+			padding: 0px 25px 0px 25px; 
+			}			
+			div.background {
+				background: url("https://41.media.tumblr.com/6830f13b0217969b7f08b528d6501e7a/tumblr_o3e5p5uLUy1v9mt8so1_100.png") repeat;
+				border: 2px solid black;
+				float:center;
+			}
+			div.transbox {
+				margin: 30px 30px 30px 30px; /*top right bottom left*/
+				padding: 0px 10px 0px 10px; /*top right bottom left*/
+				background-color: white;
+				border: 1px solid black;
+				opacity: 0.8;
+				filter: alpha(opacity=60); /* For IE8 and earlier */
+			}
+			div.transbox2 {
+				margin: 0px 0px 0px 0px; /*top right bottom left*/
+				background-color: black; /*#696969*/
+				border: 1px solid black;
+				opacity: 0.8;
+				filter: alpha(opacity=60); /* For IE8 and earlier */
+			}
+			div.containsTopnav {
+			padding: 0px 24px 0px 24px;
+			}
+			#topnav {
+				background: #232220;
+			}
+			
+			div.transbox p {
+				margin: 5%;
+				font-weight: bold;
+				color: #000000;
+			}
+			
+		</style>
+
+
+	</head>
+	<body>
+		<center><h1> <big>My Encyclopedia of Algorithms</big></h1></center>
+
+		<div class="containsTopnav">
+			<nav id= topnav>
+				<h4> <small> <center>
+				<a href="http://saturn-i.github.io/" targets="_self">Home</a> 
+				&nbsp; &nbsp; &nbsp; &nbsp; 
+				<a href="aboutMe.html" targets="_self">About me</a>
+				&nbsp; &nbsp; &nbsp; &nbsp; 
+				<a href="leaveAMessage.html" targets="_self">Leave me a message</a>
+				&nbsp; &nbsp; &nbsp; &nbsp;
+				<a href="myPortfolio.html" targets="_self">My Portfolio</a>  
+				&nbsp; &nbsp; &nbsp; &nbsp;			
+				<a href="bookReviews.html" targets="_self">Recommended Books</a>  
+				&nbsp; &nbsp; &nbsp; &nbsp;			
+				<a href="https://github.com/Saturn-i" targets="_self">My Github Account</a>  
+				&nbsp; &nbsp; &nbsp; &nbsp;			
+				<a href="algorithms.html" targets="_self">Algorithms</a>  
+				&nbsp; &nbsp; &nbsp; &nbsp;
+			</nav>
+		</div>
+		<p><p><p>
+
+		<script language="javascript" type="text/javascript">
+			function showHide(shID) {
+				if (document.getElementById(shID)) {
+					if (document.getElementById(shID+'-show').style.display != 'none') {
+						document.getElementById(shID+'-show').style.display = 'none';
+						document.getElementById(shID).style.display = 'block';
+					}
+				else {
+					document.getElementById(shID+'-show').style.display = 'inline';
+					document.getElementById(shID).style.display = 'none';
+				}
+				}
+			}
+		</script>
+		
+		<style>
+			#fsz20pt{
+			font-size: 20pt;
+			}
+			#fsz18pt{
+			font-size: 18pt;
+			}
+			#fsz15pt{
+			font-size: 15pt;
+			}
+						#fsz12pt{
+			font-size: 12pt;
+			}
+
+			/* This CSS is used for the Show/Hide functionality. */
+			.more {
+				display: none;
+				border-top: 1px solid #666;
+				border-bottom: 1px solid #666; }
+			a.showLink, a.hideLink {
+				text-decoration: none;
+				color: #36f;
+				padding-left: 8px;
+				background: transparent url(down.gif) no-repeat left; }
+			a.hideLink {
+				background: transparent url(up.gif) no-repeat left; }
+			a.showLink:hover, a.hideLink:hover {
+				border-bottom: 1px dotted #36f; }
+		</style>
+
+		<section id="containsEntirePostSectionWithBackground">
+			<div class="background">			
+				<div class="transbox">
+				
+					<center><h2>Why an encyclopedia?</h2></center>
+					<txt id="fsz12pt">
+						Time for a pop-quiz.<br> 
+						A screw, an engine, a sorting algorithm, and a computer... what do they each have in common? The answer is: they are all technologies. Admittedly, some are more primitive than others - but with them we can enhance our quality of life, and build newer and better technologies with greater ease and efficency. If a computer program is an invisible, virtual machine, then algorithms are the discrete parts - the digital nuts and bolts - which allow that machine to function. Unfortunately, the solutions to every problem we come across are not all obvious. This is where an encyclopedia comes to the rescue.<br>
+						Imagine living in a world with no technology. Now, your job is to build a Boeing 747 wide-body commercial jet airliner. Your tools going into this project are whatever you can find lying around and whatever you can slap together. You will have to literally re-invent the wheel, along with everything else. I'm sure you will quickly see what a herculean task that is. It's also really stupid (sorry Hercules) when you don't live in such a world - and yet it is more or less the standard operating procedure for many inexperianced programmers. Thankfully, you and I know better than that, and that's why I've compiled a library of algorithms here that we can use as a reference to accomplish our complex programmatic tasks quickly, easily, and hopefully without "accomplishing" a headache along the way. Happy computing! :)
+					</txt>
+					<hr>
+					<center><h2>The Library:</h2></center>
+
+					
+					<br><br>
+					<div id="wrap">
+						<txt id="fsz20pt">//Programatic Algorithms: </txt>
+						<a href="#!" id="ProgramaticAlgorithms-show" class="showLink" onclick="showHide('ProgramaticAlgorithms');return false;">Show</a>
+						<div id="ProgramaticAlgorithms" class="more">
+						
+							<blockquote>
+								<div id="wrap">
+									<txt id="fsz20pt">//Searching Algorithms:</txt>
+									<a href="#!" id="SearchingAlgorithms-show" class="showLink" onclick="showHide('SearchingAlgorithms');return false;">Show</a>
+									<div id="SearchingAlgorithms" class="more">
+
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Linear Search</txt>
+												<a href="#!" id="LinearSearch-show" class="showLink" onclick="showHide('LinearSearch');return false;">Show</a>
+												<div id="LinearSearch" class="more">
+													<txt id="fsz15pt">Linear Search content</txt>
+													<a href="#" id="LinearSearch-hide" class="hideLink" onclick="showHide('LinearSearch');return false;">Hide Linear Search</a>
+												</div>
+											</div>										
+										</blockquote>							
+
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Binary Search</txt>
+												<a href="#!" id="BinarySearch-show" class="showLink" onclick="showHide('BinarySearch');return false;">Show</a>
+												<div id="BinarySearch" class="more">
+													<txt id="fsz15pt">Binary Search content</txt>
+													<a href="#" id="BinarySearch-hide" class="hideLink" onclick="showHide('BinarySearch');return false;">Hide Binary Search</a>
+												</div>
+											</div>										
+										</blockquote>							
+										
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Brute Force Search</txt>
+												<a href="#!" id="BruteForceSearch-show" class="showLink" onclick="showHide('BruteForceSearch');return false;">Show</a>
+												<div id="BruteForceSearch" class="more">
+													<txt id="fsz15pt">Brute Force Search content</txt>
+													<a href="#" id="BruteForceSearch-hide" class="hideLink" onclick="showHide('BruteForceSearch');return false;">Hide Brute Force Search</a>
+												</div>
+											</div>										
+										</blockquote>
+										
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Breadth First Search</txt>
+												<a href="#!" id="BreadthFirstSearch-show" class="showLink" onclick="showHide('BreadthFirstSearch');return false;">Show</a>
+												<div id="BreadthFirstSearch" class="more">
+													<txt id="fsz15pt">Breadth First Search content</txt>
+													<a href="#" id="BreadthFirstSearch-hide" class="hideLink" onclick="showHide('BreadthFirstSearch');return false;">Hide Breadth First Search</a>
+												</div>
+											</div>										
+										</blockquote>							
+										
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Depth First Search</txt>
+												<a href="#!" id="DepthFirstSearch-show" class="showLink" onclick="showHide('DepthFirstSearch');return false;">Show</a>
+												<div id="DepthFirstSearch" class="more">
+													<txt id="fsz15pt">Depth First Search content</txt>
+													<a href="#" id="DepthFirstSearch-hide" class="hideLink" onclick="showHide('DepthFirstSearch');return false;">Hide Depth First Search</a>
+												</div>
+											</div>										
+										</blockquote>		
+										
+										<a href="#" id="SearchingAlgorithms-hide" class="hideLink" onclick="showHide('SearchingAlgorithms');return false;">Hide Searching Algorithms</a>
+									</div>
+								</div>										
+							</blockquote>	
+
+							<blockquote>
+								<div id="wrap">
+									<txt id="fsz20pt">//Sorting Algorithms:</txt>
+									<a href="#!" id="SortingAlgorithms-show" class="showLink" onclick="showHide('SortingAlgorithms');return false;">Show</a>
+									<div id="SortingAlgorithms" class="more">
+
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Selection Sort</txt>
+												<a href="#!" id="SelectionSort-show" class="showLink" onclick="showHide('SelectionSort');return false;">Show</a>
+												<div id="SelectionSort" class="more">
+													<txt id="fsz15pt">Selection Sort content</txt>
+													<a href="#" id="SelectionSort-hide" class="hideLink" onclick="showHide('SelectionSort');return false;">Hide Selection Sort</a>
+												</div>
+											</div>										
+										</blockquote>							
+										
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Insertion Sort</txt>
+												<a href="#!" id="InsertionSort-show" class="showLink" onclick="showHide('InsertionSort');return false;">Show</a>
+												<div id="InsertionSort" class="more">
+													<txt id="fsz15pt">Insertion Sort content</txt>
+													<a href="#" id="InsertionSort-hide" class="hideLink" onclick="showHide('InsertionSort');return false;">Hide Insertion Sort</a>
+												</div>
+											</div>										
+										</blockquote>				
+
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Bubble Sort</txt>
+												<a href="#!" id="BubbleSort-show" class="showLink" onclick="showHide('BubbleSort');return false;">Show</a>
+												<div id="BubbleSort" class="more">
+													<txt id="fsz15pt">Bubble Sort content</txt>
+													<a href="#" id="BubbleSort-hide" class="hideLink" onclick="showHide('BubbleSort');return false;">Hide Bubble Sort</a>
+												</div>
+											</div>										
+										</blockquote>				
+
+										<blockquote>
+											<div id="wrap">
+												<txt id="fsz20pt">+Quick Sort</txt>
+												<a href="#!" id="QuickSort-show" class="showLink" onclick="showHide('QuickSort');return false;">Show</a>
+												<div id="QuickSort" class="more">
+													<txt id="fsz15pt">Quick Sort content</txt>
+													<a href="#" id="QuickSort-hide" class="hideLink" onclick="showHide('QuickSort');return false;">Hide Quick Sort</a>
+												</div>
+											</div>										
+										</blockquote>				
+		
+										<a href="#" id="SortingAlgorithms-hide" class="hideLink" onclick="showHide('SortingAlgorithms');return false;">Hide Sorting Algorithms</a>
+									</div>
+								</div>										
+							</blockquote>																
+							
+							<blockquote>
+								<div id="wrap">
+									<txt id="fsz20pt">//Heuristics:</txt>
+									<a href="#!" id="Heuristics-show" class="showLink" onclick="showHide('Heuristics');return false;">Show</a>
+									<div id="Heuristics" class="more">	
+										<txt id="fsz15pt">Sorry, nothing here yet.</txt>		
+										<a href="#" id="Heuristics-hide" class="hideLink" onclick="showHide('Heuristics');return false;">Hide Heuristics</a>
+									</div>
+								</div>										
+							</blockquote>								
+							
+							<a href="#" id="ProgramaticAlgorithms-hide" class="hideLink" onclick="showHide('ProgramaticAlgorithms');return false;">Hide Programatic Algorithms</a>
+						</div>
+						
+						<br>
+						<div id="wrap">
+							<txt id="fsz20pt">//Data Structures: </txt>
+							<a href="#!" id="DataStructures-show" class="showLink" onclick="showHide('DataStructures');return false;">Show</a>
+							<div id="DataStructures" class="more">
+
+								<blockquote>
+									<div id="wrap">
+										<txt id="fsz20pt">+Stack</txt>
+										<a href="#!" id="Stack-show" class="showLink" onclick="showHide('Stack');return false;">Show</a>
+										<div id="Stack" class="more">	
+											<txt id="fsz15pt">Stack content</txt>		
+											<a href="#" id="Stack-hide" class="hideLink" onclick="showHide('Stack');return false;">Hide Stack</a>
+										</div>
+									</div>										
+								</blockquote>								
+
+								<blockquote>
+									<div id="wrap">
+										<txt id="fsz20pt">+Queue</txt>
+										<a href="#!" id="Queue-show" class="showLink" onclick="showHide('Queue');return false;">Show</a>
+										<div id="Queue" class="more">	
+											<txt id="fsz15pt">Queue content</txt>		
+											<a href="#" id="Queue-hide" class="hideLink" onclick="showHide('Queue');return false;">Hide Queue</a>
+										</div>
+									</div>										
+								</blockquote>							
+
+								<blockquote>
+									<div id="wrap">
+										<txt id="fsz20pt">+Priority Queue</txt>
+										<a href="#!" id="PriorityQueue-show" class="showLink" onclick="showHide('PriorityQueue');return false;">Show</a>
+										<div id="PriorityQueue" class="more">	
+											<txt id="fsz15pt">Priority Queue content</txt>		
+											<a href="#" id="PriorityQueue-hide" class="hideLink" onclick="showHide('PriorityQueue');return false;">Hide Priority Queue</a>
+										</div>
+									</div>										
+								</blockquote>									
+
+								<blockquote>
+									<div id="wrap">
+										<txt id="fsz20pt">+Linked List</txt>
+										<a href="#!" id="LinkedList-show" class="showLink" onclick="showHide('LinkedList');return false;">Show</a>
+										<div id="LinkedList" class="more">	
+											<txt id="fsz15pt">Linked List content</txt>		
+											<a href="#" id="LinkedList-hide" class="hideLink" onclick="showHide('LinkedList');return false;">Hide Linked List</a>
+										</div>
+									</div>										
+								</blockquote>									
+
+								<blockquote>
+									<div id="wrap">
+										<txt id="fsz20pt">+Array</txt>
+										<a href="#!" id="Array-show" class="showLink" onclick="showHide('Array');return false;">Show</a>
+										<div id="Array" class="more">	
+											<txt id="fsz15pt">Array content</txt>		
+											<a href="#" id="Array-hide" class="hideLink" onclick="showHide('Array');return false;">Hide Array</a>
+										</div>
+									</div>										
+								</blockquote>																
+							
+								<a href="#" id="DataStructures-hide" class="hideLink" onclick="showHide('DataStructures');return false;">Hide Data Structures</a>
+						</div>
+					</div>
+													
+					<div id="wrap">
+						<txt id="fsz20pt">//Design Patterns: </txt>
+						<a href="#!" id="DesignPatterns-show" class="showLink" onclick="showHide('DesignPatterns');return false;">Show</a>
+						<div id="DesignPatterns" class="more">
+							<br><txt id="fsz15pt">Sorry, nothing here yet.</txt>
+							<a href="#" id="DesignPatterns-hide" class="hideLink" onclick="showHide('DesignPatterns');return false;">Hide Design Patterns</a>
+						</div>
+					</div>
+
+					<div id="wrap">
+						<txt id="fsz20pt">//Mathematical Algorithms: </txt>
+						<a href="#!" id="MathematicalAlgorithms-show" class="showLink" onclick="showHide('MathematicalAlgorithms');return false;">Show</a>
+						<div id="MathematicalAlgorithms" class="more">
+
+							<blockquote>
+								<div id="wrap">
+									<txt id="fsz20pt">+Euclids Greatest Common Denominator</txt>
+									<a href="#!" id="EuclidsGreatestCommonDenominator-show" class="showLink" onclick="showHide('EuclidsGreatestCommonDenominator');return false;">Show</a>
+									<div id="EuclidsGreatestCommonDenominator" class="more">	
+										<txt id="fsz15pt">Euclids Greatest Common Denominator content</txt>		
+										<a href="#" id="EuclidsGreatestCommonDenominator-hide" class="hideLink" onclick="showHide('EuclidsGreatestCommonDenominator');return false;">Hide Euclids Greatest Common Denominator</a>
+									</div>
+								</div>										
+							</blockquote>														
+						
+							<a href="#" id="MathematicalAlgorithms-hide" class="hideLink" onclick="showHide('MathematicalAlgorithms');return false;">Hide Mathematical Algorithms</a>
+						</div>
+					</div>					
+
+					<div id="wrap">
+						<txt id="fsz20pt">//Miscellaneous Algorithms: </txt>
+						<a href="#!" id="MiscellaneousAlgorithms-show" class="showLink" onclick="showHide('MiscellaneousAlgorithms');return false;">Show</a>
+						<div id="MiscellaneousAlgorithms" class="more">
+
+							<blockquote>
+								<div id="wrap">
+									<txt id="fsz20pt">+Zellers congruence</txt>
+									<a href="#!" id="Zellerscongruence-show" class="showLink" onclick="showHide('Zellerscongruence');return false;">Show</a>
+									<div id="Zellerscongruence" class="more">	
+										<txt id="fsz15pt">Zellers congruence content</txt>		
+										<a href="#" id="Zellerscongruence-hide" class="hideLink" onclick="showHide('Zellerscongruence');return false;">Hide Zellers congruence</a>
+									</div>
+								</div>										
+							</blockquote>														
+
+							<blockquote>
+								<div id="wrap">
+									<txt id="fsz20pt">+Determine Modulo</txt>
+									<a href="#!" id="DetermineModulo-show" class="showLink" onclick="showHide('DetermineModulo');return false;">Show</a>
+									<div id="DetermineModulo" class="more">	
+										<txt id="fsz15pt">Determine Modulo content</txt>		
+										<a href="#" id="DetermineModulo-hide" class="hideLink" onclick="showHide('DetermineModulo');return false;">Hide Determine Modulo</a>
+									</div>
+								</div>										
+							</blockquote>
+							
+							<a href="#" id="MiscellaneousAlgorithms-hide" class="hideLink" onclick="showHide('MiscellaneousAlgorithms');return false;">Hide Miscellaneous Algorithms</a>
+						</div>
+					</div>				
+						
+				</div>
+			<br>	<br>		
+			</div>
+			
+		</section>
+	</body>
+</html>
